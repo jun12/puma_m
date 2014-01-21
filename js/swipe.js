@@ -196,9 +196,7 @@ function Swipe(container, options) {
 
   // setup event capturing
   var events = {
-
     handleEvent: function(event) {
-
       switch (event.type) {
         case 'touchstart': this.start(event); break;
         case 'touchmove': this.move(event); break;
@@ -210,9 +208,7 @@ function Swipe(container, options) {
         case 'transitionend': offloadFn(this.transitionEnd(event)); break;
         case 'resize': offloadFn(setup.call()); break;
       }
-
       if (options.stopPropagation) event.stopPropagation();
-
     },
     start: function(event) {
 

@@ -1,11 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
 body {
-
+  background-color: #000000;
 }
-
+#wrap-all {
+  width: 100%;
+  overflow: hidden;
+}
 #content {
-  
+  width: 100%;
+}
+#content.contentTransition {
+  transition: margin-top .5s linear;
+  -webkit-transition: margin-top .5s linear;
+  -moz-transition: margin-top .5s linear;
+  -o-transition: margin-top .5s linear;
+  -ms-transition: margin-top .5s linear;
+}
+.content_child {
+  width: 100%;
+}
+#content_1 {
+  margin: auto;
+  background: url("../images/kv.jpg") no-repeat;
+  background-size: 100% auto;
+}
+#content_btn {
+  position: relative;
+  top: 58%;
+  width: 55%;
+  margin: 0 auto;
+}
+#content_btn img {
+  display: block;
+  width: 100%;
+}
+.content_btn_a1 {
+  display: block;
+}
+.content_btn_a2 {
+  display: block;
+  width: 74%;
+  margin-top: 10px;
+}
+#content_2 {
+  margin: auto;
+  position:relative;
+  background: url("../images/box1.jpg") no-repeat;
+  background-size: 100% auto;
 }
 
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position:absolute;
+  height:200px;
+  top:50%;
+  margin-top: -100px;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+  height:200px;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  height:200px;
+  position: relative;
+}
+
+.swipe-wrap > div > span{
+  display:block;
+  float:left;
+  width:277px;
+  height:200px;
+  position: relative;
+  left: 50%;
+  margin-left: -136px;
+}
+
+ul#position  {display:block;width:83px;height:6px;position:absolute;top:50%;margin-top:50px;left:50%;margin-left:-42px;} 
+ul#position li {float:left; display:block;margin-left:5px;width:6px;height: 6px;background:#ffffff;border-radius: 3px;} 
+ul#position li.on{background:yellow;}
+
+
+#content_3 {
+  margin: auto;
+  background: url("../images/box2.jpg") no-repeat;
+  background-size: 100% auto;
+}
+#changeControl {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  background: url("../images/go.png") no-repeat center center;
+  background-size: 60% auto;
+  left: 50%;
+  margin-left: -29px;
+  bottom: 10%;
+}
+
+#changeControl.change {
+  -o-transform: rotate(180deg); /* Opera浏览器 */
+  -webkit-transform: rotate(180deg); /* Webkit内核浏览器 */
+  -moz-transform: rotate(180deg); /* Firefox浏览器 */
+}
+
+#puma_logo {
+  width: 81px;
+  height: 65px;
+  position: absolute;
+  background: url("../images/puma_logo.png") no-repeat center center;
+  background-size: 60% auto;
+  right: 0px;
+  bottom: 10%;
+}
 #bottom_bar {
-  
+  height: 10%;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+#linear {
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -2px;
+  background-image: url("../images/line.jpg");
+}
+
+#leftbtn {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  background: url("../images/buynow.png") no-repeat center center;
+  background-size: 60% auto;
+}
+
+#rightbtn {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  background: url("../images/gostore.png") no-repeat center center;
+  background-size: 60% auto;
 }
